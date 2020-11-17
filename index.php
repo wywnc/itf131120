@@ -8,6 +8,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
+
 <body>
 <?php
 $conn = mysqli_init();
@@ -18,6 +19,7 @@ if (mysqli_connect_errno($conn))
 }
 $res = mysqli_query($conn, 'SELECT * FROM guestbook');
 ?>
+<div class="container">
 <table class="table table-dark table-striped">
   <tr>
     <th width="100"> <div align="center">name</div></th>
@@ -36,6 +38,7 @@ while($Result = mysqli_fetch_array($res))
 }
 ?>
 </table>
+<div class="text-center"><a href="form.html" class="btn btn-success">เพิ่ม +</a></div>
 <?php
 mysqli_close($conn);
 ?>
