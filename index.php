@@ -31,15 +31,15 @@ while($Result = mysqli_fetch_array($res))
 {
 ?>
   <tr>
-    <td><div align="center"><?php echo $Result['Name'];?></div></td>
-    <td><div align="center"><?php echo $Result['Comment'];?></td>
-    <td><div class="text-center"><a href="delete.php?delete_id=<?php echo $Result['ID']; ?>" class="btn btn-danger">ลบ</a> <a href="update.php?edit_id=<?php echo $Result["ID"]; ?>" class="btn btn-warning" >แก้ไข</a></div></td>
+    <td width="100"><div align="center"><?php echo $Result['Name'];?></div></td>
+    <td width="350"><div align="center"><?php echo $Result['Comment'];?></td>
+    <td><div class="text-center"><a href="delete.php?delete_id=<?php echo $Result['ID']; ?>" class="btn btn-danger">Delete</a> <a href="update.php?edit_id=<?php echo $Result["ID"]; ?>" class="btn btn-warning" >Edit</a></div></td>
   </tr>
 <?php
 }
 ?>
 </table>
-<div class="text-center"><a href="form.html" class="btn btn-success">เพิ่ม +</a></div>
+<div class="text-center"><a href="form.html" class="btn btn-success">Add +</a></div>
 <?php
 mysqli_close($conn);
 ?>
