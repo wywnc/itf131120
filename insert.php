@@ -16,7 +16,7 @@ $sql = "INSERT INTO guestbook (Name, Comment) VALUES ('$name', '$comment')";
 
 
 if (mysqli_query($conn, $sql)) {
-    echo "New record created successfully";
+    <meta http-equiv="refresh" content="0; URL=https://itflab131120.azurewebsites.net" />;
   } else {
     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
   }
