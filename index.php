@@ -33,7 +33,7 @@ while($Result = mysqli_fetch_array($res))
   <tr>
     <td width="200"><div align="center"><?php echo $Result['Name'];?></div></td>
     <td width="200"><div align="center"><?php echo $Result['Comment'];?></td>
-    <td width="150"><div class="text-center"><a href="delete.php?delete_id=<?php echo $Result['ID']; ?>" class="btn btn-danger">Delete</a> <a href="update.php?edit_id=<?php echo $Result["ID"]; ?>" class="btn btn-warning" >Edit</a></div></td>
+    <td width="150"><div class="text-center"><a href="delete.php?delete_id=<?php echo $Result['ID']; ?>" class="btn btn-danger">Delete</a> <a href="updated.php?edit_id=<?php echo $Result["ID"]; ?>" class="btn btn-warning" >Edit</a></div></td>
   </tr>
 <?php
 }
