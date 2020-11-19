@@ -17,7 +17,7 @@ $sql = "INSERT INTO guestbook (Name, Comment) VALUES ('$name', '$comment')";
 
 if (mysqli_query($conn, $sql)) {
       ?><div class="display-3 text-center mb-3">Added Successfully</div>
-      <div class="text-center"><a href="index.php" class="btn btn-warning"><i class="fa fa-home"></i></a></div><?php
+       ?><meta http-equiv="refresh" content="1; URL=https://itflab131120.azurewebsites.net" /><?php
   } else {
     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
   }
