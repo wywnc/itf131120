@@ -29,8 +29,7 @@
 
 
     if (mysqli_query($conn, $sql)) {
-        ?><div class="display-3 text-center mb-3">Updated Successfully</div>
-        <div class="text-center"><a href="index.php" class="btn btn-primary">Back</a></div><?php
+        ?><meta http-equiv="refresh" content="0; URL=https://itflab131120.azurewebsites.net" /><?php
     } else {
         echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     }
