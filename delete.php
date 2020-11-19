@@ -27,7 +27,7 @@
     $sql = "DELETE FROM guestbook WHERE id='$id'";
 
     if (mysqli_query($conn, $sql)) {
-        ?><meta http-equiv="refresh" content="0; URL=https://itflab131120.azurewebsites.net" /></a><?php
+        ?><meta http-equiv="refresh" content="0; URL=https://itflab131120.azurewebsites.net" /><?php
     } else {
         echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     }
