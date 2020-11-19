@@ -1,6 +1,6 @@
 <?php
   $conn = mysqli_init();
-  mysqli_real_connect($conn, 'itflab13.mysql.database.azure.com', 'it63070160@itflab13', 'ITFlab13', 'itflab', 3306);
+  mysqli_real_connect($conn, 'itfsqlserver.mysql.database.azure.com', 'itfsqlserver@itfsqlserver', 'ITF131120!', 'itflab', 3306);
   if (mysqli_connect_errno($conn))
   {
       die('Failed to connect to MySQL: '.mysqli_connect_error());
@@ -41,8 +41,8 @@
 
         <div class="form-group">
           <div class="col-md-12 mt-3">
-            <input type="submit" name="upbtn" id="idupbtn" class="btn btn-success" value="แก้ไข">
-            <a href="index.php" class="btn btn-danger">ยกเลิก</a>
+            <input type="submit" name="upbtn" id="idupbtn" class="btn btn-success" value="Update">
+            <a href="index.php" class="btn btn-danger">Cancel</a>
           </div>
         </div>
 
